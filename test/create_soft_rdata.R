@@ -7,6 +7,18 @@ p2s_list_pipe <- lapply(list.files('../last/'), function(x){
   return(a)
 })
 lapply(p2s_list_pipe, head)
+if(F){
+  library(RSQLite)
+  sqlite    <- dbDriver("SQLite")
+  con <- dbConnect(sqlite,"probes_pipeline.sqlite") # makes a new file
+  lapply(p2s_list_pipe, function(x){
+    ids=x[,-3]
+    print(x[1,3])
+    dbWriteTable(con,x[1,3],ids,row.name=F,overwrite=T)
+  })
+  # it's too big, more than 200 Mb, so quit.
+}
+
 ns=lapply(p2s_list_pipe, function(x){
   # x=tmp[[1]]
   ids=x[,-3]

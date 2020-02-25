@@ -1,5 +1,7 @@
 # 下载全部表达芯片平台的探针的碱基序列自主注释到基因ID
 
+郑重申明：此包idmap3存放在GitHub，仅仅是一个草稿，不会再维护，也不会更新，是为了说明我最后的annoprobe包的开发历程。
+
 前面我们提到过表达芯片探针注释的3种方法，参见：[第一个万能芯片探针ID注释平台R包](https://mp.weixin.qq.com/s/CzV9zv0AbhhfTalVomTGCw), 并且帮助大家搞定了第一种bioconductor包的方法，大家**无需下载几十个bioconductor包**，然后自己一个个提取基因信息，我全部为大家做好啦，也就是 **idmap1** 这个目前host在GitHub， R包：
 
 - https://github.com/jmzeng1314/idmap1
@@ -100,4 +102,12 @@ Complete information for ASIC5 gene (Protein Coding), Acid Sensing Ion Channel S
 ### 是不是需要更新你的注释啦
 
 那么，赶快使用我们的包吧！
+
+#### 文末友情宣传
+
+强烈建议你推荐给身边的**博士后以及年轻生物学PI**，多一点数据认知，让他们的科研上一个台阶：
+
+- [全国巡讲全球听（买一得五）](https://mp.weixin.qq.com/s/sgmSCK4GuAY0-bPDua34cg) ，你的生物信息学入门课
+- [生信技能树的2019年终总结](https://mp.weixin.qq.com/s/azTBe54kv3OpS16hrSKzQQ)  ，你的生物信息学成长宝藏
+- [2020学习主旋律，B站74小时免费教学视频为你领路](https://mp.weixin.qq.com/s/Y-8YKye2jOw2tSLJnCvBlA)
 
